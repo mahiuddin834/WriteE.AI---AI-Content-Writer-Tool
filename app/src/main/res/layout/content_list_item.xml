@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/edt_txt_background"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/contentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Content Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/contentParagraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:maxLines="6"
+        android:text="New research also found that idney stones."
+         />
+
+
+</LinearLayout>
