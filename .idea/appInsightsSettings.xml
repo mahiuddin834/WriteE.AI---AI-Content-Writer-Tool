@@ -27,10 +27,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.itnation.writee_aicontentwritertool" />
+                  <option name="mobileSdkAppId" value="1:250565737924:android:3fcfbad4c306eb872d3891" />
+                  <option name="projectId" value="writee-ai-content-writer-tool" />
+                  <option name="projectNumber" value="250565737924" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

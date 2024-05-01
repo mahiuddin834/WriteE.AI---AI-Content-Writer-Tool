@@ -4,6 +4,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,7 +33,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
 
-    FloatingActionButton floatingActionButton;
+    ImageView floatingActionButton, guidenceBtn;
+    LinearLayout startWriting;
     RecyclerView contentListRV;
 
     ContentListAdapter contentListAdapter;
@@ -49,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
         floatingActionButton = findViewById(R.id.floatingActionButton);
         contentListRV = findViewById(R.id.contentListRV);
+        startWriting = findViewById(R.id.startWriting);
+        guidenceBtn = findViewById(R.id.guidenceBtn);
 
 
 
@@ -58,8 +63,16 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        guidenceBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+
+            }
+        });
+
+
+        startWriting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

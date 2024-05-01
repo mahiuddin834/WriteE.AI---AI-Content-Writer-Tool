@@ -41,7 +41,7 @@ public class AiGenerateActivity extends AppCompatActivity {
     };
 
     String[] targetAudiance = {
-            "Select Audience", "EveryBody", "Male(8-12)", "Female(8-12)", "Male(13-17)", "Female(13-17)", "Male(18-22)", "Female(18-22)", "Male(18-22)", "Female(18-22)",
+            "Select Audience", "EveryBody", "18+", "Male", "Female", "Male(8-12)", "Female(8-12)", "Male(13-17)", "Female(13-17)", "Male(18-22)", "Female(18-22)", "Male(18-22)", "Female(18-22)",
             "Male(23-30)", "Female(23-30)", "Male(30+)", "Female(30+)"
     };
 
