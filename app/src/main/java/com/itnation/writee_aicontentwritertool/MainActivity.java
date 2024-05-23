@@ -1,9 +1,12 @@
 package com.itnation.writee_aicontentwritertool;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -66,6 +69,22 @@ public class MainActivity extends AppCompatActivity {
         guidenceBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Dialog dialog= new Dialog(MainActivity.this);
+                dialog.setContentView(R.layout.guidance_alert);
+                dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.txt_edt_item_back));
+                Button button= dialog.findViewById(R.id.okButton);
+
+                button.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.show();
 
 
             }

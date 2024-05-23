@@ -7,7 +7,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -26,7 +28,7 @@ import com.itnation.writee_aicontentwritertool.R;
 
 public class AiGenerateActivity extends AppCompatActivity {
 
-    FloatingActionButton generateFloatingActionButton;
+    Button generateFloatingActionButton;
     EditText topicEdtTxt;
     Spinner mediaFlatformSpinner, contentToneSpinner, targetAudianceSpinner, contentLanguageSpinner;
 
@@ -70,6 +72,7 @@ public class AiGenerateActivity extends AppCompatActivity {
     String topicTxt, mediaFlatformSPtxt, contentToneSPtxt, AudianceSPtxt, contentLanguageSPtxt;
     String finalQueryTxt;
     ProgressBar progressBar;
+    ImageView backBtn;
 
 
 
@@ -88,6 +91,7 @@ public class AiGenerateActivity extends AppCompatActivity {
         targetAudianceSpinner = findViewById(R.id.targetAudianceSpinner);
         contentLanguageSpinner = findViewById(R.id.contentLanguageSpinner);
         progressBar = findViewById(R.id.progressBar);
+        backBtn = findViewById(R.id.backBtn);
 
 
         Window window = AiGenerateActivity.this.getWindow();
@@ -127,6 +131,8 @@ public class AiGenerateActivity extends AppCompatActivity {
                     generateContent();
 
 
+
+
                 } else {
                     topicEdtTxt.setError("Please Enter Your Topic");
                 }
@@ -135,6 +141,14 @@ public class AiGenerateActivity extends AppCompatActivity {
             }
         });
 
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                onBackPressed();
+            }
+        });
 
     }//---------------close OnCreate -----------------------------
 

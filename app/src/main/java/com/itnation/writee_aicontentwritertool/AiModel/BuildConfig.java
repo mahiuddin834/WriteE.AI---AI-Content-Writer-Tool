@@ -2,6 +2,8 @@ package com.itnation.writee_aicontentwritertool.AiModel;
 
 public class BuildConfig {
 
-    public static String apiKey = "AIzaSyAll3HWAMYYEpxFp-uwZZ_BplZnq2jaok4";
+    public static String apiKey = "AIzaSyA2ZI1pgQ63vDmRpdItcuORb4cCMZ_RgMs";
+
+    //AIzaSyA2ZI1pgQ63vDmRpdItcuORb4cCMZ_RgMs
 
 }
